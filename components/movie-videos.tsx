@@ -1,17 +1,24 @@
+import styles from "../styles/movie-video.module.css";
 import { API_URL } from "../app/(home)/page";
 
 async function getVideos(id: string) {
-  await new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(true);
-    }, 3000);
-  });
-  throw Error("somthing break");
-  const response = await fetch(`${API_URL}/${id}/videos`);
+  const response = await fetch(`${API_URL}/${id}/videos`, { next: { revalidate: 3000 } });
   return response.json();
 }
 
 export default async function MovieVidos({ id }: { id: string }) {
   const videos = await getVideos(id);
-  return <h6>{JSON.stringify(videos)}</h6>;
+  return (
+    <div className={styles.container}>
+      {videos.map((video) => (
+        <iframe
+          key={video.id}
+          src={`https://www.youtube.com/embed/${video.key}`}
+          title={video.name}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      ))}
+    </div>
+  );
 }
