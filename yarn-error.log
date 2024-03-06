@@ -1,0 +1,50 @@
+Arguments: 
+  C:\nodejs\node.exe C:\Users\jumpr\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add typescript --dev
+
+PATH: 
+  C:\Program Files\Java\jdk-11.0.12\\bin;C:\Program Files\Common Files\Oracle\Java\javapath;D:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\ProgramData\chocolatey\bin;D:\Brackets\command;C:\Program Files\Git\cmd;C:\Java\flutter\bin;C:\Program Files\Git\bin;C:\nodejs\;C:\Users\jumpr\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jre1.8.0_301\bin;C:\Users\jumpr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jumpr\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-11.0.12\\bin;C:\Program Files\Bandizip\;D:\shinjihwan\PostgreSQL\11\bin;C:\Users\jumpr\AppData\Local\Microsoft\WindowsApps;;D:\JetBrains\IntelliJ IDEA 2022.2.2\bin;;C:\Users\jumpr\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.11.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\study\learn-nextjs14\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node'
+
+npm manifest: 
+  {
+    "name": "learn-nextjs14",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "next": "^14.1.1",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@types/node": "20.11.24",
+      "@types/react": "18.2.61",
+      "typescript": "5.3.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
