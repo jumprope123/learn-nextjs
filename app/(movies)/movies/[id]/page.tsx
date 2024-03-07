@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import MovieInfo, { getMovie } from "../../../../components/movie-info";
 import MovieVidos from "../../../../components/movie-videos";
+import MovieCredits from "../../../../components/movie-credits";
 
 interface IParameter {
   params: { id: string };
@@ -19,6 +20,9 @@ export default async function MovieDetail({ params: { id } }: IParameter) {
     <div>
       <Suspense fallback={"loading movie info"}>
         <MovieInfo id={id} />
+      </Suspense>
+      <Suspense fallback={"loading movie credits"}>
+        <MovieCredits id={id} />
       </Suspense>
       <Suspense fallback={"loading movie vidoes"}>
         <MovieVidos id={id} />
