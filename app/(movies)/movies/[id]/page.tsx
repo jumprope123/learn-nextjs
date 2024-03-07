@@ -2,10 +2,6 @@ import { Suspense } from "react";
 import MovieInfo, { getMovie } from "../../../../components/movie-info";
 import MovieVidos from "../../../../components/movie-videos";
 
-// export const metadata = {
-//   title: "movie",
-// };
-
 interface IParameter {
   params: { id: string };
 }

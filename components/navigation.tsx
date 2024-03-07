@@ -14,8 +14,8 @@ export default function Navigation() {
           {path === "/" ? "🎇" : ""}
         </li>
         <li>
-          <Link href={"/about-us"}>about-us</Link>
-          {path === "/about-us" ? "🎇" : ""}
+          <Link href={"/about-me"}>about-me</Link>
+          {path === "/about-me" ? "🎇" : ""}
         </li>
       </ul>
     </nav>
